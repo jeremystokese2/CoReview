@@ -1,0 +1,15 @@
+id: tone-and-hedging
+name: Tone & Hedging
+description: >-
+  Reviews documents for overly definitive language, unhedged claims,
+  passive-voice overuse, and undefined jargon.
+version: 0.1.0
+can_rewrite: false
+severity_model:
+  low: Stylistic preference
+  medium: Inconsistent with house style
+  high: Risk of overclaim or compliance concern
+# Per-pack model overrides. Leave commented to use env defaults.
+# models:
+#   reviewer: claude-sonnet-4-6
+#   consolidator: claude-opus-4-7
