@@ -89,7 +89,7 @@ sequenceDiagram
     Consolidator->>Foundry: chat completion
     Foundry-->>Consolidator: JSON
     Consolidator-->>BG: ConsolidatedIssue[]<br/>(keep, confidence, citations)
-    BG->>BG: filter (drop keep=false;<br/>drop confidence<0.3 unless high)
+    BG->>BG: filter by keep flag<br/>and confidence threshold
     BG->>DB: insert issues
     BG->>DB: update review (status=complete)
     end
